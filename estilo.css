@@ -1,0 +1,86 @@
+/* Inclui bordas e espaçamentos internos no cálculo da largura. */
+* { box-sizing: border-box; }
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background: #f1f4fa;
+    color: #19243a;
+}
+
+.cabecalho {
+    background: #19243a;
+    color: white;
+    text-align: center;
+    padding: 36px 20px;
+}
+
+h1 {
+    font-size: clamp(1.8rem, 4vw, 3rem);
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+/* As seções dividem a largura e passam para outra linha se faltar espaço. */
+.portal {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+
+.secao {
+    flex: 1 1 260px;
+    min-width: 0;
+    background: white;
+    border-radius: 12px;
+    border-top: 5px solid var(--destaque);
+    padding: 20px;
+    box-shadow: 0 4px 14px #19243a18;
+    display: flex;
+    flex-direction: column;
+}
+
+/* A classe repete o estilo. A cor vem do ID de cada seção. */
+.titulo-secao {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--destaque);
+    margin-bottom: 8px;
+}
+
+.descricao { margin-bottom: 16px; }
+
+.galeria {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+
+.galeria figure { flex: 1; min-width: 0; }
+
+.galeria img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.fonte-imagem {
+    font-size: .75rem;
+    color: #4c596e;
+    margin-top: 4px;
+}
+
+.acesso { margin-top: auto; }
+
+.acesso a {
+    display: inline-block;
+    background: var(--destaque);
+    color: white;
+    font-weight: bold;
+    padding: 8px 12px;
+    border-radius: 6px;
+}

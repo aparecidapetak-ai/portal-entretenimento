@@ -1,0 +1,13 @@
+/* Adaptado do CSS Reset v2.0 de Eric Meyer, em domínio público.
+   https://meyerweb.com/eric/tools/css/reset/
+   Esta versão mantém as regras úteis para os elementos do portal. */
+html, body, div, main, header, section, h1, h2, p, a, figure, figcaption, img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+main, header, section, figure, figcaption { display: block; }
+body { line-height: 1; }
